@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Flowplayer · RTMP setup</title>
+
+    <!-- optimize mobile versions -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- The "minimalist" skin - choose from: "minimalist.css", "functional.css", "playful.css" -->
+    <link rel="stylesheet" href="//releases.flowplayer.org/5.5.0/skin/minimalist.css">
+
+    <!-- Minimal styling for this standalone page, can be removed -->
+    <link rel="stylesheet" href="css/demo.css">
+    <!-- Syntax highlighting of source code, can be removed -->
+    <link rel="stylesheet" href="css/pygments.css">
+
+
+    <!-- Flowplayer depends on jquery -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- Flowplayer library -->
+    <script src="//releases.flowplayer.org/5.5.0/flowplayer.min.js"></script>
+
+
+    <script>
+        flowplayer( function ( api ) {
+            api.bind( "load", function ( e, api, video ) {
+                $( "#videosrc" ).text( video.src );
+            } );
+        } );
+    </script>
+
+</head>
+
+<body>
+
+<div id="content">
+    <h1>Flowplayer · RTMP setup</h1>
+    <div class="flowplayer" data-engine="flash" data-rtmp="rtmp://wsemanager.ciclanohost.com.br:1935/ondemand" data-ratio="0.4167">
+        <video autoplay>
+            <source type="video/flash"  src="mp4:demo.mp4">
+        </video>
+    </div>
+    <p class="info">Playing <span id="videosrc">&nbsp;</span></p>
+</div>
+<!-- end content -->
+
+</body>
+</html><!--
+<source type="video/flash" src="mp4:demo.mp4">
+                <source type="video/webm" src="http://stream.flowplayer.org/bauhaus.webm">
+            <source type="video/mp4"  src="http://stream.flowplayer.org/bauhaus.mp4">
+            <source type="video/ogg"  src="http://stream.flowplayer.org/bauhaus.ogv">
+                        -->

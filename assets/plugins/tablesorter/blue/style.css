@@ -1,0 +1,15 @@
+/* tables */
+
+
+table.tablesorter thead tr .table-header, table.tablesorter_aplicacoes thead tr .table-header, table.tablesorter_conversor thead tr .table-header {
+    background: url(bg.png) no-repeat 99% 60%;
+    cursor: pointer;
+}
+
+table.tablesorter thead tr .headerSortUp, table.tablesorter_aplicacoes thead tr .headerSortUp, table.tablesorter_conversor thead tr .headerSortUp {
+    background: url(asc.png) no-repeat 99% 60%;
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter_aplicacoes thead tr .headerSortDown, table.tablesorter_conversor thead tr .headerSortDown {
+    background: url(desc.png) no-repeat 99% 40%;
+}
+

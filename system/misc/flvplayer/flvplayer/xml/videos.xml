@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flvplayer>
+  <settings>
+  	<streamtype>progressive</streamtype>
+	<rtmp>rtmp://your.rtmphost.com/</rtmp>
+	<application>app_name/</application>
+  </settings>
+  <videoList>
+      <videos>
+	  	<filename>flvplayer/media/your_video.flv</filename>
+		<name>Lamborghini</name>
+		<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas commodo dignissim lacus, eu dapibus sapien eleifend ut. Phasellus sit amet mauris neque.</description>
+		<thumb>flvplayer/thumbs/default.png</thumb>
+		<closedcaptions>
+			<cc begin="0" end="0">null</cc>
+		</closedcaptions>
+	  </videos>
+	  <videos>
+	  	<filename>flvplayer/media/your_video.flv</filename>
+		<name>Les Jumelles</name>
+		<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas commodo dignissim lacus, eu dapibus sapien eleifend ut. Phasellus sit amet mauris neque.</description>
+		<thumb>flvplayer/thumbs/default.png</thumb>
+		<closedcaptions>
+			<cc begin="0" end="0">null</cc>
+		</closedcaptions>
+	  </videos>
+      <videos>
+	  	<filename>flvplayer/media/your_video.flv</filename>
+		<name>Stop the Big Brother State</name>
+		<description>We believe that people willing to trade their freedom for temporary security deserve neither and will lose both.</description>
+		<thumb>flvplayer/thumbs/default.png</thumb>
+		<closedcaptions>
+			<cc begin="1" end="10">If you ask a politician assigned to security matters today, what he or she thinks about the surveillance techniques used to prevent crime</cc>
+			<cc begin="11" end="16">there's a good chance you'd be told about the benefits of closed circuit camera systems.</cc>
+			<cc begin="17" end="24">You'd hear convincing arguments about the additional safety in their facility because they act as a crime deterrent.</cc>
+			<cc begin="27" end="37">Or, you might hear about the virtue of being able to track terrorists by finding information about airline passengers, or by enforcing the use of biometric passports.</cc>
+			<cc begin="41" end="48">Maybe you find out how trusted computing protects you from malicious software, and viruses.</cc>
+			<cc begin="50" end="60">Or how scanning emails and ease dropping on phone calls helps police detect criminals of all kinds.</cc>
+			<cc begin="65" end="73">It would probably all sound great, because the idea is you should start thinking of these techniques as being the cream of the crop.</cc>
+			<cc begin="74" end="82">But lets face the not so quite obvious, nut nontheless, omnipresent downside of all of this.</cc>
+			<cc begin="83" end="98">While public cameras may actually help to find criminals, modern CC TV signals, like the ones used in London are even today able to lock onto any person the operators wish to track using automatic facial identification.</cc>
+			<cc begin="99" end="105">Thus enabling the police to create a detailed database of say, all of your movements.</cc>
+			<cc begin="109" end="121">The keeping of records of airline passengers flying to the US, and in addition, the obligation of everyone to submit biometric passports, are supposed to help fight terrorism.</cc>
+			<cc begin="122" end="141">But this also allows the secret service to gather explicit information about the nationality of every traveller. Explicit information such as your fingerprints, the color of your eyes, and a high resolution picture of your face. Information you would usually expect to be taken from supected criminals.</cc>
+			<cc begin="143" end="162">Trusted computing promises to enhance security on your PC by only allowing certain trusted software to run on your machine. What you're not told is that decides which software you can trust, and are therefore allowed to install on your PC, will certinaly not be you.</cc>
+			<cc begin="163" end="178">On the one hand, scanning emails and wire tapping phone calls for ominous keywords could convict a few small time criminals, but on the other, it allows all sorts of people involved in this monitoring process to retrieve all sorts of private information.</cc>
+			<cc begin="179" end="186">Information you just might not want to share with the staff of your local police station.</cc>
+			<cc begin="190" end="212">These symptoms can all be taken as evidence of the slow, but steady conversion of our western societies into police states. Our western societies claim to be liberal democracies, but our leaders try to enforce more and more supressive laws, and instrumentalize the public fear of terror to justify them.</cc>
+		</closedcaptions>
+	  </videos>
+	  <videos>
+	  	<filename>flvplayer/media/your_video.flv</filename>
+		<name>Black Bird Video</name>
+		<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas commodo dignissim lacus, eu dapibus sapien eleifend ut. Phasellus sit amet mauris neque. </description>
+		<thumb>flvplayer/thumbs/default.png</thumb>
+		<closedcaptions>
+			<cc begin="0" end="0">null</cc>
+		</closedcaptions>
+	  </videos>
+	  <videos>
+	  	<filename>flvplayer/media/your_video.flv</filename>
+		<name>Google Chrome Commercial</name>
+		<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas commodo dignissim lacus, eu dapibus sapien eleifend ut. Phasellus sit amet mauris neque.</description>
+		<thumb>flvplayer/thumbs/default.png</thumb>
+		<closedcaptions>
+			<cc begin="0" end="0">null</cc>
+		</closedcaptions>
+	  </videos>
+	  <videos>
+	  	<filename>flvplayer/media/your_video.flv</filename>
+		<name>Hummer Video</name>
+		<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas commodo dignissim lacus, eu dapibus sapien eleifend ut. Phasellus sit amet mauris neque.</description>
+		<thumb>flvplayer/thumbs/default.png</thumb>
+		<closedcaptions>
+			<cc begin="0" end="0">null</cc>
+		</closedcaptions>
+	  </videos>
+	  <videos>
+	  	<filename>flvplayer/media/your_video.flv</filename>
+		<name>Saturn Video</name>
+		<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas commodo dignissim lacus, eu dapibus sapien eleifend ut. Phasellus sit amet mauris neque.</description>
+		<thumb>flvplayer/thumbs/default.png</thumb>
+		<closedcaptions>
+			<cc begin="0" end="0">null</cc>
+		</closedcaptions>
+	  </videos>
+  </videoList>
+</flvplayer>

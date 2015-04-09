@@ -1,0 +1,59 @@
+<html lang="pt_br">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Playlist : Flowplayer</title>
+    <link rel="stylesheet" type="text/css" href="css/playlist.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.tools.min.js"></script>
+    <script type="text/javascript" src="js/flowplayer-3.2.13.min.js"></script>
+    <script type="text/javascript" src="js/flowplayer.playlist-3.2.11.min.js"></script>
+    <script>
+        function carregarFlowplayer() {
+            $f( "player_ondemand", "swf/flowplayer-3.2.18.swf", {
+                playlist: [
+                    {
+                        url: 'mp4:demo.mp4',
+                        title: 'sample1'
+                    },
+                    {
+                        url: 'mp4:codeeducation.mp4',
+                        title: 'codeeducation'
+                    }
+                ],
+                clip: {
+                    autoPlay: true,
+                    baseURL: "rtmp://wsemanager.ciclanohost.com.br:1935/ondemand",
+                    provider: 'rtmp'
+
+                },
+                plugins: {
+                    rtmp: {
+                        url: "swf/flowplayer.rtmp-3.2.11.swf",
+                        netConnectionUrl: "rtmp://wsemanager.ciclanohost.com.br:1935/ondemand",
+                        failOverDelay: 1000,
+                        durationFunc: 'getStreamLength'
+                    },
+                    controls: {
+                        playlist: true
+                    }
+                }
+            } ).playlist( "div.clips:first", { loop: true } );
+        }
+        $( document ).ready( function () {
+            carregarFlowplayer();
+        } );
+    </script>
+</head>
+<body>
+<div class="box">
+    <div class="clips petrol" style="float:left">
+        <a href="mp4:demo.mp4"> Demo <span>424x240 | 524 kbps</span> <em>00:09:56</em> </a>
+        <a href="mp4:codeeducation.mp4"> Codeeducation <span>1280x720 | 615 kbps</span> <em>00:09:56</em> </a>
+
+    </div>
+    <!-- the player using splash image -->
+    <a class="player plain" id="player_ondemand" style="float:left"> <img class="button" src="img/play_text_large.png">
+    </a> <br clear="all">
+</div>
+</body>
+</html>

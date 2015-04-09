@@ -1,0 +1,54 @@
+ffmpeg version N-66706-g9da679e-syslint Copyright (c) 2000-2014 the FFmpeg developers
+  built on Oct  8 2014 14:20:46 with gcc 4.4.7 (GCC) 20120313 (Red Hat 4.4.7-4)
+  configuration: --prefix=/usr/local/cpffmpeg --enable-shared --enable-nonfree --enable-gpl --enable-pthreads --enable-libopencore-amrnb --enable-decoder=liba52 --enable-libopencore-amrwb --enable-libfaac --enable-libmp3lame --enable-libtheora --enable-libvorbis --enable-libx264 --enable-libxvid --extra-cflags=-I/usr/local/cpffmpeg/include/ --extra-ldflags=-L/usr/local/cpffmpeg/lib --enable-version3 --extra-version=syslint
+  libavutil      54.  9.100 / 54.  9.100
+  libavcodec     56.  3.101 / 56.  3.101
+  libavformat    56.  8.100 / 56.  8.100
+  libavdevice    56.  1.100 / 56.  1.100
+  libavfilter     5.  1.103 /  5.  1.103
+  libswscale      3.  1.100 /  3.  1.100
+  libswresample   1.  1.100 /  1.  1.100
+  libpostproc    53.  1.100 / 53.  1.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/usr/local/WowzaStreamingEngine/content/ondemand/demo.mp4':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 512
+    compatible_brands: qt  
+    creation_time   : 1970-01-01 00:00:00
+    encoder         : Lavf52.73.0
+  Duration: 00:09:56.46, start: 0.000000, bitrate: 524 kb/s
+    Stream #0:0(eng): Video: h264 (Constrained Baseline) (avc1 / 0x31637661), yuv420p, 424x240, 420 kb/s, 24 fps, 24 tbr, 24 tbn, 48 tbc (default)
+    Metadata:
+      creation_time   : 1970-01-01 00:00:00
+      handler_name    : DataHandler
+      encoder         : libx264
+    Stream #0:1(eng): Audio: aac (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 99 kb/s (default)
+    Metadata:
+      creation_time   : 1970-01-01 00:00:00
+      handler_name    : DataHandler
+Please use -b:a or -b:v, -b is ambiguous
+-async is forwarded to lavfi similarly to -af aresample=async=1:min_hard_comp=0.100000:first_pts=0.
+[libx264 @ 0x8255040] using cpu capabilities: none!
+[libx264 @ 0x8255040] profile Constrained Baseline, level 2.0
+[libx264 @ 0x8255040] 264 - core 142 r2479 dd79a61 - H.264/MPEG-4 AVC codec - Copyleft 2003-2014 - http://www.videolan.org/x264.html - options: cabac=0 ref=1 deblock=1:0:0 analyse=0x1:0x111 me=hex subme=2 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=0 weightp=0 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=abr mbtree=1 bitrate=400 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/usr/local/WowzaStreamingEngine/content/ondemand/wse_demo.mp4':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 512
+    compatible_brands: qt  
+    encoder         : Lavf56.8.100
+    Stream #0:0(eng): Video: h264 (libx264) ([33][0][0][0] / 0x0021), yuv420p, 230x240, q=-1--1, 400 kb/s, 30 fps, 15360 tbn, 30 tbc (default)
+    Metadata:
+      creation_time   : 1970-01-01 00:00:00
+      handler_name    : DataHandler
+      encoder         : Lavc56.3.101 libx264
+    Stream #0:1(eng): Audio: aac ([64][0][0][0] / 0x0040), 44100 Hz, stereo, fltp, 64 kb/s (default)
+    Metadata:
+      creation_time   : 1970-01-01 00:00:00
+      handler_name    : DataHandler
+      encoder         : Lavc56.3.101 aac
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+frame=   44 fps=0.0 q=12.0 size=      35kB time=00:00:01.55 bitrate= 183.3kbits/s dup=9 drop=0    frame=   67 fps= 65 q=19.0 size=     124kB time=00:00:02.34 bitrate= 431.7kbits/s dup=13 drop=0    frame=   89 fps= 58 q=22.0 size=     181kB time=00:00:03.06 bitrate= 482.8kbits/s dup=18 drop=0    frame=  110 fps= 54 q=21.0 size=     210kB time=00:00:03.73 bitrate= 459.2kbits/s dup=22 drop=0    frame=  136 fps= 53 q=21.0 size=     257kB time=00:00:04.62 bitrate= 455.4kbits/s dup=27 drop=0    frame=  166 fps= 54 q=22.0 size=     318kB time=00:00:05.61 bitrate= 464.2kbits/s dup=33 drop=0    frame=  192 fps= 54 q=22.0 size=     375kB time=00:00:06.50 bitrate= 472.2kbits/s dup=38 drop=0    frame=  221 fps= 54 q=23.0 size=     431kB time=00:00:07.50 bitrate= 470.5kbits/s dup=44 drop=0    frame=  251 fps= 55 q=23.0 size=     484kB time=00:00:08.49 bitrate= 466.2kbits/s dup=50 drop=0    frame=  281 fps= 55 q=24.0 size=     561kB time=00:00:09.47 bitrate= 484.9kbits/s dup=56 drop=0    frame=  310 fps= 56 q=24.0 size=     623kB time=00:00:10.44 bitrate= 488.6kbits/s dup=62 drop=0    frame=  339 fps= 56 q=24.0 size=     683kB time=00:00:11.40 bitrate= 490.6kbits/s dup=68 drop=0    frame=  379 fps= 57 q=24.0 size=     762kB time=00:00:12.72 bitrate= 490.4kbits/s dup=76 drop=0    frame=  411 fps= 58 q=25.0 size=     830kB time=00:00:13.83 bitrate= 491.4kbits/s dup=82 drop=0    frame=  446 fps= 59 q=25.0 size=     906kB time=00:00:14.97 bitrate= 495.4kbits/s dup=89 drop=0    frame=  479 fps= 59 q=26.0 size=     974kB time=00:00:16.06 bitrate= 496.7kbits/s dup=96 drop=0    frame=  526 fps= 61 q=24.0 size=    1022kB time=00:00:17.67 bitrate= 473.6kbits/s dup=105 drop=0    frame=  569 fps= 62 q=23.0 size=    1064kB time=00:00:19.06 bitrate= 457.0kbits/s dup=114 drop=0    frame=  615 fps= 64 q=22.0 size=    1099kB time=00:00:20.59 bitrate= 437.1kbits/s dup=123 drop=0    
